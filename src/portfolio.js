@@ -24,8 +24,8 @@ const greeting = {
   title: "Hi all, I'm Gisore",
   subTitle: emoji(
     "Highly skilled software engineer with a passion for creating innovative solutions. Experienced in various programming\n" +
-    "languages and frameworks. Proven ability to work in fast-paced environments and deliver high-quality projects on time.\n" +
-    "Seeking a challenging role where I can leverage my technical expertise to contribute to the success of a dynamic team."
+      "languages and frameworks. Proven ability to work in fast-paced environments and deliver high-quality projects on time.\n" +
+      "Seeking a challenging role where I can leverage my technical expertise to contribute to the success of a dynamic team."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1FClBfQs8A-7EoNvbYLKEJaHT96if41CH/view?usp=sharing", // Set to empty to hide the button
@@ -53,12 +53,18 @@ const skillsSection = {
   title: "What I do",
   subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+    emoji(
+      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+    ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"),
-    emoji("⚡ Implement scalable APIs and databases to handle large volumes of data"),
+    emoji(
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ),
+    emoji(
+      "⚡ Implement scalable APIs and databases to handle large volumes of data"
+    ),
     emoji("⚡ implement automated testing and CI/CD pipelines"),
-    emoji("⚡ Implement and maintained network security protocols"),
+    emoji("⚡ Implement and maintained network security protocols")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -128,20 +134,22 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Strathmore University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Bachelor of Science in Business Information Technology",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      logo: require("./assets/images/strathmore.png"),
+      subHeader: "Bachelor of  Business Information Technology",
+      desc: "It offers a combination of computer science, business management and human development courses.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "System analyst and designer knowledge",
+        "System developer knowledge",
+        "Database developer and administrator knowledge",
+        "Data analyst knowledge",
+        "Project manager Skills"
       ]
     },
     {
-      schoolName: "Strathmore University[CISCO ACADEMY]",
-      logo: require("./assets/images/stanfordLogo.png"),
+      schoolName: "Strathmore University[Cisco Academy]",
+      logo: require("./assets/images/strathmore.png"),
       subHeader: "Certification in routing and switching",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Network administrator knowledge"]
     }
   ]
 };
@@ -152,8 +160,8 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "90%"  //Insert relative proficiency in percentage
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -188,13 +196,13 @@ const workExperiences = {
       desc: "I have worked on projects with clients from across the world, and have built a reputation for my attention to detail, ability to meet deadlines, and client-oriented approach.",
       descBullets: [
         "Spearheaded the development of a feature-rich analytics platform, integrating HTML5, CSS3, and React, boosting\n" +
-        "customer insights by 45%.",
+          "customer insights by 45%.",
         "Orchestrated a seamless migration of key applications to AWS, resulting in a 25% reduction in hosting costs and a\n" +
-        "15% improvement in application availability.",
+          "15% improvement in application availability.",
         "Championed CI/CD processes using Jenkins and Docker, reducing deployment times by 50% and facilitating\n" +
-        "consistent, daily production updates.",
+          "consistent, daily production updates.",
         "Directed and supported a team of developers, as a lead developer, using modern frameworks, such as\n" +
-        "Flutter,Nextjs, Angular and Node.js, promoting code quality and maintainability."
+          "Flutter,Nextjs, Angular and Node.js, promoting code quality and maintainability."
       ]
     },
     {
@@ -218,10 +226,10 @@ const workExperiences = {
       desc: "I was responsible for developing applications for mobile devices powered by Apple's iOS operating system. Ideally, I became proficient with the following two programming languages for this platform: Objective-C or Swift.",
       descBullets: [
         "Developed and maintained IOS application, including implementing new features, fixing bugs, and optimizing\n" +
-        "performance.",
+          "performance.",
         "Collaborated with cross-functional teams to design, develop, and deploy iOS app to the app store.",
         "Spearheaded the integration of third-party APIs and services into iOS app, enhancing their capabilities and\n" +
-        "expanding their reach to a broader audience.",
+          "expanding their reach to a broader audience.",
         "Worked with Amazon AWS services, SQL and NoSQL databases, and CI/CD tools like Jenkins and Github Actions."
       ]
     },
@@ -234,7 +242,7 @@ const workExperiences = {
       descBullets: [
         "Implemented and maintained network security protocols to ensure data protection and prevent unauthorized access.",
         "Managed and troubleshooted network infrastructure, including routers, switches, and firewalls, to optimize\n" +
-        "performance and minimize downtime.",
+          "performance and minimize downtime.",
         "Conducted regular network audits and assessment to identify vulnerabilities and recommend solutions for improvement.",
         "Upgraded 20+ Cisco ISR G2 VGW/CUBE/SRST routers"
       ]
@@ -257,7 +265,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("https://private-user-images.githubusercontent.com/144854877/347741020-ea723175-b3a0-4de1-be97-2b461269f804.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEyMTY5MzEsIm5iZiI6MTcyMTIxNjYzMSwicGF0aCI6Ii8xNDQ4NTQ4NzcvMzQ3NzQxMDIwLWVhNzIzMTc1LWIzYTAtNGRlMS1iZTk3LTJiNDYxMjY5ZjgwNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxN1QxMTQzNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04Y2JmMTY4NGM0OThmZTU3ZDBmYjRmZGM5MWNmZGNkY2I5NmVmYzA4MDlmZWQ5YWI5YWQxZDlmMmExNjI1NmUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.KPXbbqgUS25C6N6Ifakq0XuDLIpzuIQxZDHWh7tjp6A"),
+      image: require("./assets/images/docapp.png"),
       projectName: "doctor_appointment_app",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -269,9 +277,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/store.png"),
       projectName: "borcelle_store_app",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "borcelle store app",
       footerLink: [
         {
           name: "Visit Website",
@@ -294,30 +302,42 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Data Engineering Foundations",
-      subtitle: "Data science can be generally defined as the process of making data useful, and data engineering is a key part of how and why. If you think of data science like a race car, the data engineers are the pit crew. They’re not driving the car, but they make the car much easier to drive. Data engineers make sure the data flow is running smoothly, monitor systems, anticipate problems, and repair the data pipeline whenever problems arise. They extract and gather data from multiple sources and load it into a single, easy-to-query database. In short, data engineers make data scientists’ lives easier.\n" +
+      subtitle:
+        "Data science can be generally defined as the process of making data useful, and data engineering is a key part of how and why. If you think of data science like a race car, the data engineers are the pit crew. They’re not driving the car, but they make the car much easier to drive. Data engineers make sure the data flow is running smoothly, monitor systems, anticipate problems, and repair the data pipeline whenever problems arise. They extract and gather data from multiple sources and load it into a single, easy-to-query database. In short, data engineers make data scientists’ lives easier.\n" +
         "\n" +
         "In this course, Harshit Tyagi explains the fundamentals of data engineering. He covers key topics like data wrangling, database schema, and developing ETL pipelines. He also details several data engineering tools like Hive, Hadoop, Spark, and Airflow. By the end of this course, it should be abundantly clear why the data engineer is one of the most valuable people in a data-driven organization.",
       image:
         "https://media.licdn.com/dms/image/C4E0DAQGFiPES2_z90A/learning-public-crop_675_1200/0/1613158188348?e=1721826000&v=beta&t=BYuH0xCawqvQx3pKgsZoytBLkmg2KjHdb1yApBDW-YY",
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Data Engineering Foundations", url: "" }
+        {name: "Certification", url: ""},
+        {name: "Data Engineering Foundations", url: ""}
       ]
     },
     {
       title: "Azure: Understanding the Big Picture",
-      subtitle: "Understanding the scope of the cloud is an overwhelming task, even for a seasoned developer. This course looks at the big picture of Microsoft Azure. This perspective can help you understand the many Azure offerings and assess which best fit your organization's cloud strategy. Those just entering the cloud will find the course to be a valuable resource they can return to again and again. Instructor Walt Ritscher kicks off the course by comparing the four cornerstones of the cloud: software as a service, infrastructure as a service, platform as a service, and service as a service. He then covers Azure subscription options and costs and dives deeper into specific Azure services, including web hosting, cloud storage, Azure security, infrastructure, DevOps tools, backup, hybrid cloud systems, and media encoding, as well as event and notification services. Review the services that interest you or zoom out for a more complete picture of this powerful cloud-computing platform.",
-      image: "https://media.licdn.com/dms/image/C560DAQHl0olj_gGG5w/learning-public-crop_675_1200/0/1655317039464?e=1721826000&v=beta&t=gpUMxpLKDfeNUmLOma0HtL47VB03gmWnJ671dlN03ao",
-      footerLink: [{ name: "Certification", url: "" },{ name: "Azure: Understanding the Big Picture", url: "" }]
+      subtitle:
+        "Understanding the scope of the cloud is an overwhelming task, even for a seasoned developer. This course looks at the big picture of Microsoft Azure. This perspective can help you understand the many Azure offerings and assess which best fit your organization's cloud strategy. Those just entering the cloud will find the course to be a valuable resource they can return to again and again. Instructor Walt Ritscher kicks off the course by comparing the four cornerstones of the cloud: software as a service, infrastructure as a service, platform as a service, and service as a service. He then covers Azure subscription options and costs and dives deeper into specific Azure services, including web hosting, cloud storage, Azure security, infrastructure, DevOps tools, backup, hybrid cloud systems, and media encoding, as well as event and notification services. Review the services that interest you or zoom out for a more complete picture of this powerful cloud-computing platform.",
+      image:
+        "https://media.licdn.com/dms/image/C560DAQHl0olj_gGG5w/learning-public-crop_675_1200/0/1655317039464?e=1721826000&v=beta&t=gpUMxpLKDfeNUmLOma0HtL47VB03gmWnJ671dlN03ao",
+      footerLink: [
+        {name: "Certification", url: ""},
+        {name: "Azure: Understanding the Big Picture", url: ""}
+      ]
     },
 
     {
-      title: "Cisco Certified Support Technician (CCST) Networking Cert Prep: 2 IP Addressing",
-      subtitle: "The Cisco Certified Support Technician (CCST) Networking certification validates an individual’s skills and knowledge of entry-level networking concepts and topics. The certification demonstrates foundational knowledge and skills needed to show how networks operate, including the devices, media, and protocols that enable network communications. In this second course of a four-part certification prep series, instructor Kevin Wallace covers topics related to the IP Addressing questions of the exam. Kevin explains IP version 4 addressing, how to work with binary numbering, and how to subnet IP version 4 networks into VLANs or broadcast domains.",
-      image: "https://media.licdn.com/dms/image/D560DAQF6h4EINyMqDw/learning-public-crop_675_1200/0/1691095096722?e=1721829600&v=beta&t=4w_uUmFGcVgDV-GhWdCLnoX5aXPsJ7Oz7wdM7zz6DEY",
+      title:
+        "Cisco Certified Support Technician (CCST) Networking Cert Prep: 2 IP Addressing",
+      subtitle:
+        "The Cisco Certified Support Technician (CCST) Networking certification validates an individual’s skills and knowledge of entry-level networking concepts and topics. The certification demonstrates foundational knowledge and skills needed to show how networks operate, including the devices, media, and protocols that enable network communications. In this second course of a four-part certification prep series, instructor Kevin Wallace covers topics related to the IP Addressing questions of the exam. Kevin explains IP version 4 addressing, how to work with binary numbering, and how to subnet IP version 4 networks into VLANs or broadcast domains.",
+      image:
+        "https://media.licdn.com/dms/image/D560DAQF6h4EINyMqDw/learning-public-crop_675_1200/0/1691095096722?e=1721829600&v=beta&t=4w_uUmFGcVgDV-GhWdCLnoX5aXPsJ7Oz7wdM7zz6DEY",
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Cisco Certified Support Technician (CCST) Networking Cert Prep: 2 IP Addressing", url: "" }
+        {name: "Certification", url: ""},
+        {
+          name: "Cisco Certified Support Technician (CCST) Networking Cert Prep: 2 IP Addressing",
+          url: ""
+        }
       ]
     }
   ],
